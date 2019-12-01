@@ -224,19 +224,19 @@ footer {
 /*#region Achtergrond*/
 
 #bgHome {
-  background-image: url(../images/tasmania.jpg);
+  background-image: url(./images/tasmania.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 #bgVolkslied {
-  background-image: url(../images/parlement.jpg);
+  background-image: url(./images/parlement.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 #bgSteden {
-  background-image: url(../images/bondibeach.jpg);
+  background-image: url(./images/bondibeach.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
