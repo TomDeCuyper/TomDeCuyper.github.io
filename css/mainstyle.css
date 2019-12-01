@@ -1,0 +1,244 @@
+/*#region Algemene opmaak*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 75px 50px 1fr 20px;
+  grid-template-areas:
+    "header"
+    "navMenu"
+    "inhoud"
+    "footer";
+  height: 100vh;
+}
+
+.flex-container {
+  grid-area: inhoud;
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: red;
+}
+
+/*#endregion */
+
+/*#region Header*/
+
+header {
+  background-color: red;
+}
+
+#titel {
+  margin-top: 5px;
+  margin-left: 210px;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+#vlagVanAustralie {
+  grid-area: header;
+  margin-top: -100px;
+  width: 200px;
+  margin-left: 0;
+}
+
+/*#endregion */
+
+/*#region Navigatiemenu*/
+
+nav {
+  grid-area: navMenu;
+  background-color: darkblue;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 25px;
+  color: whitesmoke;
+  /*font-weight: bolder;*/
+}
+
+/*#navLink {
+  text-decoration: none;
+  line-height: 46px;
+  width: 150px;
+  display: block;
+}*/
+
+ul a {
+  color: whitesmoke;
+}
+
+li a {
+  text-decoration: none;
+  line-height: 46px;
+  width: 150px;
+  display: block;
+}
+
+li a:hover {
+  color: red;
+  font-weight: bolder;
+  border-top: solid 2px whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  background-color: blue;
+}
+
+.activeLink {
+  border-top: solid 2px whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  background-color: blue;
+  color: whitesmoke;
+}
+/*#endregion */
+
+/*#region Home opmaak*/
+
+#infoAustralie {
+  display: flex;
+  margin: 20px;
+  padding: 20px 30px 20px 30px;
+  width: 800px;
+  height: 500px;
+  border-radius: 0px 30px 0px 30px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background: rgba(255, 99, 71, 0.2);
+  color: antiquewhite;
+}
+
+#locatieAustralie {
+  margin: 25px;
+  border-radius: 0px 30px 0px 30px;
+}
+
+/*#endregion */
+
+/*#region Steden opmaak*/
+
+.foto-container {
+  margin: 20px;
+  width: 450px;
+  height: 282px;
+  text-align: center;
+  background-color: darkblue;
+  border: solid 2px red;
+  border-radius: 0px 30px 0px 30px;
+  transition: transform 0.8s;
+}
+
+.foto {
+  width: 450px;
+  height: 250px;
+  border-radius: 0 0 0 25px;
+}
+
+.foto-container:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  margin: 5px;
+}
+
+/*#endregion */
+
+/*#region Volkslied opmaak*/
+
+#volksliedInformatie {
+  display: flex;
+  margin: 20px;
+  padding: 30px 20px 30px 20px;
+  width: 300px;
+  height: 315px;
+  border-radius: 0px 30px 0px 30px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background: rgba(0, 125, 253, 0.25);
+  color: antiquewhite;
+}
+
+#volksliedTekst {
+  display: flex;
+  margin: 20px;
+  padding: 90px 20px 20px 20px;
+  width: 300px;
+  height: 280px;
+  border-radius: 0px 30px 0px 30px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background: rgba(0, 125, 253, 0.25);
+  color: antiquewhite;
+  overflow: auto;
+}
+
+#video {
+  margin: 20px;
+}
+
+/*#endregion */
+
+/*#region footer*/
+
+footer {
+  grid-area: footer;
+
+  color: whitesmoke;
+  text-align: center;
+  background-color: darkblue;
+}
+
+/*#endregion */
+
+/*#region Achtergrond*/
+
+#bgHome {
+  background-image: url(/st-1920-S3A-pe02-TomDeCuyper/images/tasmania.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#bgVolkslied {
+  background-image: url(/st-1920-S3A-pe02-TomDeCuyper/images/parlement.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#bgSteden {
+  background-image: url(/st-1920-S3A-pe02-TomDeCuyper/images/bondibeach.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*#endregion */
