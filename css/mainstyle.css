@@ -236,7 +236,7 @@ footer {
 }
 
 #bgSteden {
-  background-image: url(./images/bondibeach.jpg);
+  background-image: url(/./images/bondibeach.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
